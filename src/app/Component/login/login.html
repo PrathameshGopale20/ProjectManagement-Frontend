@@ -1,0 +1,31 @@
+<div class="login-bg">
+  <div class="login-card">
+    <img src="https://static.vecteezy.com/system/resources/previews/003/689/228/non_2x/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg" alt="Login Image" class="login-image">
+    
+    <div class="login-form">
+      <h2 class="mb-4">Log In</h2>
+      <form [formGroup]="loginForm">
+        <div class="mb-3 position-relative">
+          <input type="text" class="form-control ps-4" name="username" formControlName="email" placeholder="Your Name" required>
+          <i class="fa fa-user input-icon"></i>
+        </div>
+        <div class="mb-3 position-relative">
+          <input type="password" class="form-control ps-4" name="password" formControlName="password" placeholder="Password" required>
+          <i class="fa fa-lock input-icon"></i>
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="remember" name="remember">
+          <label for="remember" class="form-check-label">Remember me</label>
+        </div>
+        <button class="btn btn-primary w-100" type="button" (click)="onSubmit()">Log In</button>
+      </form>
+
+      <div class="text-center mt-2">
+        <a href="forgot" >Forgot Password?</a>
+      </div>
+      <div class="text-center mt-2">
+        <a href="signUp">Create an account</a>
+      </div>
+    </div>
+</div>
+</div>
